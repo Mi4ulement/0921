@@ -7,6 +7,18 @@
   <script src="ex6-1.js"></script>
   <script src="ex6-5.js"></script>
   <script src="ex6-7.js"></script>
+  <script src="ex6-8.js"></script>
+  <script src="ex6-9.js"></script>
+  <script src="ex6-10.js"></script>
+  <script src="ex6-11.js"></script>
+  <script src="ex6-12.js"></script>
+  <script src="ex6-13.js"></script>
+  <script src="ex7-1.js"></script>
+  <script src="ex7-2.js"></script>
+  <script src="ennsyuu2.js"></script>
+  <script src="ex7-3.js"></script>
+  <script src="ex7-4.js"></script>
+  <script src="ennsyuu3.js"></script>
 </head>
 
 <body>
@@ -109,6 +121,87 @@
   <input type="button" value="レイ" onclick="someone('レイ');"> 
   <input type="button" value="シンジ" onclick="someone('シンジ');"> 
   <input type="button" value="アスカ" onclick="someone('アスカ');"> 
+
+<h1>練習問題6.8 JavaScriptによる変更の練習</h1>
+  <input type="button" value="あいさつ" onclick="sayhello68();">
+  <input type="button" value="太朗" onclick="taro68();">
+  <input type="button" value="花子" onclick="hanako68();">
+  <p id="who68">world</p>
+
+<h1>練習問題6.9 JavaScriptによるページの変更69</h1>
+  <div id="txt1">
+    <input type="button" value="テキストの変更" onclick="txtchange1();">
+    城西大学
+  </div>
+
+<h1>練習問題6.10</h1>
+  <br>
+  <input type="button" value="画像の変更" onclick="imgchange1();">
+  <input type="button" value="元に戻す" onclick="imgchange2();">
+  <br>
+  <br>
+  <img src='./image/keiei_small.jpg' id="logo" alt="Josai Logo" class="imagechange">
+
+<h1>練習問題6.11</h1>
+  <!--setInterval-->
+  <form name="timer">
+    <input type="button" value="スタート" onclick="startfnc();">
+    <br>
+    <input type="text" name="moji" size="30" value="">
+  </form>
+ 
+  <br>
+  <form><input type="button" value="Timer" onclick="setTimeout('mes()',3000);"></form>
+  <br>
+
+<h1>練習問題6.12</h1>
+  
+  <!--setTimeout-->
+  
+  <form name="timer1">
+    <input type="button" value="スタート" onclick="hyoji1()">
+    <br>
+    <input type="text" name="moji1" size="30" value="">
+  </form>
+
+<h1>練習問題6.13</h1>
+    <form><input type="button" value="画像切り替え" onclick="timechange();setTimeout('returnimg()',3000);"></form>
+    <br>
+    <img src='./image/keiei_small.jpg' id="timechg" alt="Jikannkirikae" class="imagechange">
+
+<h1>練習問題7.1</h1>
+    <h1>テキスト入力の練習</h1>
+    <input type="button" value="あいさつ" onclick="sayhello71();">
+    <p>誰？<input type="text" id="who71"></p>
+
+<h1>練習問題7.2</h1>
+    <h1>足し算</h1>
+    <p>
+      <input type="text" id="input1">+<input type="text" id="input2">
+      <input type="button" value="計算" onclick="add();">
+    </p>
+    <h1>演習2 ボディマス指数計算</h1>
+    <p>体重:<input type="text" id="input3">kg</p>
+    <p>身長:<input type="text" id="input4">cm</p>
+    <input type="button" value="計算" onclick="bodymas();">
+
+<h1>練習問題7.3</h1>
+    <h1>なぞなぞ</h1>
+    <p>目を閉じていないと見られないものはなーに？</p>
+    <p>
+      答(漢字1字で):<input type="text" id="answer">
+      <input type="button" value="解答" onclick="nazo();">
+    </p>
+
+<h1>練習問題7.4</h1>
+    <p>
+      答:<input type="text" id="answer1">
+      <input type="button" value="解答" onclick="nazo1();">
+    </p>
+    <h1>演習3 閏年か平年か</h1>
+    <p>
+      西暦を入力してください。<input type="text" id="ennsyuu">年 <input type="button" value="調べる" onclick="ennsyuu3()">
+     </p>
 
 </body>
 </html>
